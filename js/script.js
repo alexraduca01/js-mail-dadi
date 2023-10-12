@@ -16,13 +16,31 @@ button.addEventListener('click', function(){
 
     const users = ['aaa@gmail.com', 'bbb@gmail.com', 'ccc@gmail.com', 'ddd@gmail.com', 'eee@gmail.com'];
     const emailCheck = document.querySelector('input').value;
-    let checkMex = document.createElement('p');
-    document.getElementById('wrapper').append(checkMex);
-
+    let checkMex = document.getElementById('checkmex');
+    
     if(users.includes(emailCheck)){
         checkMex.innerHTML = 'Presente !';
-    } else {
+    } else if (users.includes(emailCheck) === false){
         checkMex.innerHTML = 'Assente !';
-    }  
+    }     
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Utility 
+
+// Math.floor(Math.random() * (max - min + 1) ) + min;
