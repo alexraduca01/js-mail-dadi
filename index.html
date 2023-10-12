@@ -10,19 +10,30 @@
     </head>
     
     <body>
-        <div id="wrapper" class="container mc-vanilla m-auto">
-            <div id="email-container">
-                <label for="email">Inserisci la tua E-mail</label>
-                <input type="email" name="email" id="email" value="">
-                <button id="submit-button" class="btn btn-success">Continue</button>
-                <p id="checkmex"></p>
+        <div id="wrapper" class="container bg-body-secondary m-auto mt-5">
+            <div class="d-flex justify-content-center">
+                <div id="email-container">
+                    <label for="email" class="d-block">Inserisci la tua E-mail</label>
+                    <input type="email" name="email" id="email" value="">
+                </div>
             </div>
-            <div id="dice-game" class="d-none">
-                <button id="dice-button" class="btn btn-warning">Premi per giocare !</button>
-                <p id="user-dice"></p>
-                <p id="ia-dice"></p>
+            <div class="d-flex justify-content-center mt-4">
+                <div>
+                    <button id="submit-button" class="btn btn-success">Continue</button>
+                    <p id="checkmex"></p>
+                </div>
             </div>
-           
+            <div>
+                <div id="dice-game" class="d-none">
+                    <div class="d-flex justify-content-center">
+                        <button id="dice-button" class="btn btn-warning">Premi per giocare !</button>
+                    </div>
+                    <div class="d-flex justify-content-evenly mt-4">
+                        <p id="user-dice"></p>
+                        <p id="ia-dice"></p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="js/script.js"></script>

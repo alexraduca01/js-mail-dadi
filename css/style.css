@@ -21,7 +21,11 @@
     color: var(--amber);
 }
 .mc-vanilla {
-    background-color: var(--vanilla);
+    color: var(--vanilla);
 }
 
 /* utilities */
+
+#wrapper {
+    height: 60vh;
+}
