@@ -21,7 +21,7 @@
     color: var(--amber);
 }
 .mc-vanilla {
-    color: var(--vanilla);
+    background-color: var(--vanilla);
 }
 
 /* utilities */

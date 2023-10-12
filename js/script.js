@@ -9,3 +9,20 @@
 // Che ci sia un array da qualche parte?
 // Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', function(){
+
+    const users = ['aaa@gmail.com', 'bbb@gmail.com', 'ccc@gmail.com', 'ddd@gmail.com', 'eee@gmail.com'];
+    const emailCheck = document.querySelector('input').value;
+    let checkMex = document.createElement('p');
+    document.getElementById('wrapper').append(checkMex);
+
+    if(users.includes(emailCheck)){
+        checkMex.innerHTML = 'Presente !';
+    } else {
+        checkMex.innerHTML = 'Assente !';
+    }  
+
+})
