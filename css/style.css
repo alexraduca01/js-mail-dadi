@@ -1,0 +1,27 @@
+/* colors */
+
+:root {
+    --smoky-black: #0a0903ff;
+    --red: #ff0000ff;
+    --ut-orange: #ff8200ff;
+    --amber: #ffc100ff;
+    --vanilla: #ffeaaeff;
+}
+
+.mc-black {
+    color: var(--smoky-black);
+}
+.mc-red {
+    color: var(--red);
+}
+.mc-orange {
+    color: var(--ut-orange);
+}
+.mc-amber {
+    color: var(--amber);
+}
+.mc-vanilla {
+    color: var(--vanilla);
+}
+
+/* utilities */
