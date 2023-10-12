@@ -10,9 +10,13 @@
 // Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
 
-const button = document.querySelector('button');
+const submitButton = document.getElementById('submit-button');
+const diceButton = document.getElementById('dice-button');
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
 
-button.addEventListener('click', function(){
+submitButton.addEventListener('click', function(){
 
     const users = ['aaa@gmail.com', 'bbb@gmail.com', 'ccc@gmail.com', 'ddd@gmail.com', 'eee@gmail.com'];
     const emailCheck = document.querySelector('input').value;
@@ -20,9 +24,22 @@ button.addEventListener('click', function(){
     
     if(users.includes(emailCheck)){
         checkMex.innerHTML = 'Presente !';
-    } else if (users.includes(emailCheck) === false){
+    } else {
         checkMex.innerHTML = 'Assente !';
-    }     
+    }  
+
+})
+
+diceButton.addEventListener('click', function(){
+
+    const userNumber = getRndInteger(1, 6);
+    const iaNumber = getRndInteger(1, 6);
+
+    if(userNumber < iaNumber){
+        
+    } else {
+        
+    }
 
 })
 
@@ -41,6 +58,3 @@ button.addEventListener('click', function(){
 
 
 
-// Utility 
-
-// Math.floor(Math.random() * (max - min + 1) ) + min;
